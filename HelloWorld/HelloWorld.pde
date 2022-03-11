@@ -1,8 +1,8 @@
 //Global Variables
 char z, w, space; 
 String e, f, g, h, i, k, a, b; 
-int two, skipCount=2, twenty=20, ten, one;
-float decimal=1.0, thirty=30.0; //must include a zero after the decimal or the code reader will read it as INTEGER.
+int two, skipCount=2, twenty=20, ten;
+float decimal=1.0, thirty=30.0, one=1.0; //must include a zero after the decimal or the code reader will read it as INTEGER.
 //This is called initializing, allows the variable to exist, and lets its meaning show up in the console. 
 // Can initialize/populate (determine what the variables represent) in global variables
 void setup() {
@@ -31,7 +31,7 @@ void setup() {
   h = "to";
   i = "100";
   k = "by";
-  one = 1;
+  one = 1.0;
   twenty = 20;
   thirty = 30.0;
   two = 1; 
@@ -58,7 +58,7 @@ void draw()
   ten-=1;
   String secondSentence = "Sarah Muir counts to"+space+ten+w+space+k+space+"-1.";
   println (secondSentence);
-  one = one+1;
+  one = one+0.1; //can put decimals into counting formula, as long as the variable is a decimal.
   println(one,b+space+a+space+e+space+f+z); //HOW CAN YOU STOP THE COMPUTER FROM COUNTING WHEN IT REACHES A CERTAIN NUMBER
 }//End draw, this is manadatory, can't have a program without it
 //
