@@ -1,11 +1,12 @@
 //Global Variables
-char z, w; 
-String e, f, g, h, i, k, one; 
-int two, skipCount=2, twenty=10000;
-float decimal=1.0, thirty=100000000000.0; //must include a zero after the decimal or the code reader will read it as INTEGER.
+char z, w, space; 
+String e, f, g, h, i, k, one, a, b; 
+int two, skipCount=2, twenty=20;
+float decimal=1.0, thirty=30.0; //must include a zero after the decimal or the code reader will read it as INTEGER.
 //This is called initializing, allows the variable to exist, and lets its meaning show up in the console. 
-// Can initialize/populate (determine what the represent) in global variables
+// Can initialize/populate (determine what the variables represent) in global variables
 void setup() {
+  //two*=skipCount; //+=, -=, *=, /=
   //Formua to count backwards from 10000 is twenty = twenty-1 or twenty-- or twenty-=1
   //two= two+1 or two++ or two+=1 will do the same thing
   //String vs char: string asks for more space, char asks for less space from the hard drive
@@ -18,18 +19,21 @@ void setup() {
   //println(a,b,c+x);//Second Method of Concatentaion,  can also add + with the commas
   //character escapes: "\n" = adds a space, "\t"= adds a tab
   String secondSentence = "Sarah Muir counts to 10, by 1.";
-  println (secondSentence);
+  println (secondSentence); 
+  space = ' ';
   z = '.'; //Difference between char and String is the double quote, and the single quotes
   w = ',';
   e = "Sarah"; 
   f = "Muir";
   g = "counts";
   h = "to";
-  i = "10000";
-  twenty = 10000;
-  thirty = 100000000000.0;
-  k = "by";
+  i = "100";
   one = "1";
+  a = "ate";
+  b = "cookies";
+  twenty = 20;
+  thirty = 30.0;
+  k = "by";
   two = 1; //for integers do not include quotation marks
   //This is called Populations, Declaration, Valuing
   //println(e, f, g, h, i+w, k, str(two)+z, "\n");
@@ -40,12 +44,19 @@ void setup() {
 void draw() 
 //makes the computer do stuff, like subtracting, adding, multiplying, dividing
 {
-  two*=skipCount; //+=, -=, *=, /=
+  two++; 
   println(e, f, g, h, i+w, k, str(two)+z);
   twenty/= skipCount;
-  println(e, f, g, h, one+w, "backwards from", str(twenty)+z);
-   thirty/= skipCount;
-  println(e, f, g, h, one+w, "backwards from", str(thirty)+z);
+  println(e, f, g, h, i+w, "backwards from", str(twenty)+z);
+  thirty/= skipCount;
+  println(e, f, g, h, i+w, "backwards from", str(thirty)+z);
+  println(e+space+f+space+a+space+two+space+b+z);
+  println(e,f,a,two,b+z, "in her life");
+  println("My mom has",two, "emails");
+   String secondSentence = "Sarah Muir counts to 10, by 1.";
+  println (secondSentence);
+  println(i, b+space+a+space+e+space+f+z); 
+  
 }//End draw, this is manadatory, can't have a program without it
 //
 void keyPressed () {
