@@ -1,7 +1,7 @@
 //Global Variables
 char z, w, space; 
-String e, f, g, h, i, k, one, a, b; 
-int two, skipCount=2, twenty=20;
+String e, f, g, h, i, k, a, b; 
+int two, skipCount=2, twenty=20, ten, one;
 float decimal=1.0, thirty=30.0; //must include a zero after the decimal or the code reader will read it as INTEGER.
 //This is called initializing, allows the variable to exist, and lets its meaning show up in the console. 
 // Can initialize/populate (determine what the variables represent) in global variables
@@ -23,18 +23,20 @@ void setup() {
   space = ' ';
   z = '.'; //Difference between char and String is the double quote, and the single quotes
   w = ',';
+  a = "ate";
+  b = "cookies";
   e = "Sarah"; 
   f = "Muir";
   g = "counts";
   h = "to";
   i = "100";
-  one = "1";
-  a = "ate";
-  b = "cookies";
+  k = "by";
+  one = 1;
   twenty = 20;
   thirty = 30.0;
-  k = "by";
-  two = 1; //for integers do not include quotation marks
+  two = 1; 
+  ten = 10;
+  //for integers do not include quotation marks
   //This is called Populations, Declaration, Valuing
   //println(e, f, g, h, i+w, k, str(two)+z, "\n");
   //println(e, f, g, h, i+w, k, int(one)+two+z);
@@ -42,21 +44,22 @@ void setup() {
 }//End setup, this is mandatory, can't have a program without it
 //
 void draw() 
-//makes the computer do stuff, like subtracting, adding, multiplying, dividing
+  //makes the computer do stuff, like subtracting, adding, multiplying, dividing
 {
   two++; 
   println(e, f, g, h, i+w, k, str(two)+z);
-  twenty/= skipCount;
+  twenty/= skipCount; //WHY DO YOU HAVE TO PUT SKIPCOUNT
   println(e, f, g, h, i+w, "backwards from", str(twenty)+z);
   thirty/= skipCount;
   println(e, f, g, h, i+w, "backwards from", str(thirty)+z);
   println(e+space+f+space+a+space+two+space+b+z);
-  println(e,f,a,two,b+z, "in her life");
-  println("My mom has",two, "emails");
-   String secondSentence = "Sarah Muir counts to 10, by 1.";
+  println(e, f, a, two, b, "in her life"+z);
+  println("My mom has", two, "emails");
+  ten-=1;
+  String secondSentence = "Sarah Muir counts to"+space+ten+w+space+k+space+"-1.";
   println (secondSentence);
-  println(i, b+space+a+space+e+space+f+z); 
-  
+  one = one+1;
+  println(one,b+space+a+space+e+space+f+z); //HOW CAN YOU STOP THE COMPUTER FROM COUNTING WHEN IT REACHES A CERTAIN NUMBER
 }//End draw, this is manadatory, can't have a program without it
 //
 void keyPressed () {
