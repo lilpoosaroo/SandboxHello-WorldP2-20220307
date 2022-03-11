@@ -53,13 +53,13 @@ void draw()
   thirty/= skipCount;
   println(e, f, g, h, i+w, "backwards from", str(thirty)+z);
   println(e+space+f+space+a+space+two+space+b+z);
-  println(e, f, a, two, b, "in her life"+z);
+  println(e, f, a, two, b, "in her life"+z, "/t");
   println("My mom has", two, "emails");
   ten-=1;
   String secondSentence = "Sarah Muir counts to"+space+ten+w+space+k+space+"-1.";
   println (secondSentence);
   one = one+0.1; //can put decimals into counting formula, as long as the variable is a decimal.
-  println(one,b+space+a+space+e+space+f+z); //HOW CAN YOU STOP THE COMPUTER FROM COUNTING WHEN IT REACHES A CERTAIN NUMBER
+  println(one,b+space+a+space+e+space+f+z, "/t"); //HOW CAN YOU STOP THE COMPUTER FROM COUNTING WHEN IT REACHES A CERTAIN NUMBER
 }//End draw, this is manadatory, can't have a program without it
 //
 void keyPressed () {
