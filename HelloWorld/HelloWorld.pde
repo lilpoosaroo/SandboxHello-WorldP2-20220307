@@ -1,7 +1,7 @@
-//Global Variables
+//Global Variables:
 char z, w, space; 
-String e, f, g, h, i, k, a, b; 
-int two, skipCount=2, twenty=20, ten, onezeroone;
+String e, f, g, h, k, a, b; 
+int two, skipCount=2, twenty=20, ten, onezeroone, i;
 float decimal=1.0, thirty=30.0, one=1.0; //must include a zero after the decimal or the code reader will read it as INTEGER.
 //This is called initializing, allows the variable to exist, and lets its meaning show up in the console. 
 // Can initialize/populate (determine what the variables represent) in global variables
@@ -29,7 +29,6 @@ void setup() {
   f = "Muir";
   g = "counts";
   h = "to";
-  i = "100";
   k = "by";
   one = 1.0;
   twenty = 20;
@@ -37,6 +36,7 @@ void setup() {
   two = 1; 
   ten = 10;
   onezeroone = 101;
+  i = 1000000;
   //for integers do not include quotation marks
   //This is called Populations, Declaration, Valuing
   //println(e, f, g, h, i+w, k, str(two)+z, "\n");
@@ -48,21 +48,23 @@ void draw()
   //makes the computer do stuff, like subtracting, adding, multiplying, dividing
 {
   two++; 
-  println(e, f, g, h, i+w, k, str(two)+z);
+  println("\n", e, f, g, h, onezeroone+w, k,two+z);
   twenty/= skipCount; //WHY DO YOU HAVE TO PUT SKIPCOUNT
   println(e, f, g, h, i+w, "backwards from", str(twenty)+z);
   thirty/= skipCount;
   println(e, f, g, h, i+w, "backwards from", str(thirty)+z);
-  println(e+space+f+space+a+space+two+space+b+z);
-  println(e, f, a, two, b, "in her life"+z, "/t");
-  println("My mom has", two, "emails");
   ten-=1;
   String secondSentence = "Sarah Muir counts to"+space+ten+w+space+k+space+"-1.";
   println (secondSentence);
-  if (one=one+0.1 < 101) one = one+0.1; 
+  one=one+0.1;
   //can put decimals into counting formula, as long as the variable is a decimal.
-  println(one,b+space+a+space+e+space+f+z);
-  //HOW CAN YOU STOP THE COMPUTER FROM COUNTING WHEN IT REACHES A CERTAIN NUMBER
+  println("\t", e+space+f+space+a+space+two+space+b+z);
+  println("\t", e, f, a, two, b, "in her life"+z);
+  println("\t", one, b+space+a+space+e+space+f+z);
+  i/= skipCount;
+  println("\t\t", "My mom has", two, "emails");
+  print("\t\t", "My dad has"+space+i+space+"emails"+z);
+  //How can you stop the computer from counting once it reaches a certain number, did not figure it out
 }//End draw, this is manadatory, can't have a program without it
 //
 void keyPressed () {
