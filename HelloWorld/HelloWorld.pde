@@ -48,11 +48,11 @@ void draw()
   //makes the computer do stuff, like subtracting, adding, multiplying, dividing
 {
   two++; 
-  println("\n", e, f, g, h, onezeroone+w, k,two+z);
-  twenty/= skipCount; //WHY DO YOU HAVE TO PUT SKIPCOUNT
-  println(e, f, g, h, i+w, "backwards from", str(twenty)+z);
+  println("\n", e, f, g, h, onezeroone+",", "by"+space+two);
+  twenty/= skipCount; 
+  println(e, f, g+space+ "backwards from", str(twenty)+z);
   thirty/= skipCount;
-  println(e, f, g, h, i+w, "backwards from", str(thirty)+z);
+  println(e, f, g, "backwards from"+space+ str(thirty)+z);
   ten-=1;
   String secondSentence = "Sarah Muir counts to"+space+ten+w+space+k+space+"-1.";
   println (secondSentence);
@@ -62,8 +62,8 @@ void draw()
   println("\t", e, f, a, two, b, "in her life"+z);
   println("\t", one, b+space+a+space+e+space+f+z);
   i/= skipCount;
-  println("\t\t", "My mom has", two, "emails");
-  print("\t\t", "My dad has"+space+i+space+"emails"+z);
+ println("\t\t", "My mom has", two, "emails");
+ print("\t\t", "My dad has"+space+i+space+"emails"+z);
   //How can you stop the computer from counting once it reaches a certain number, did not figure it out
 }//End draw, this is manadatory, can't have a program without it
 //
