@@ -1,8 +1,19 @@
+/*
+Add listeners
+
+
+
+
+
+*/
+
+
+
 //Global Variables:
-int x = width*1/4, y = height*1/4, rectWidth = width*1/2, rectHeight = height*1/2;
+int x,y,rectWidth,rectHeight;
 int backgroundBlue =0; //this means it will be set to zero when nightMode is on. 
 int strokeReset=1;
-int thin=width*1/50, thick=2*thin; 
+int thin, thick; 
 color strokeColor, fillColor;
 color yellow=#F0E963, purple=#C063F0, whiteReset=#FFFFFF, blackReset=#000000;//used to color selector in "Tools"
 color yellowNightMode=#E2EA00, purpleNightMode=#49115A; //has no blue light
@@ -13,6 +24,15 @@ void setup() {
   size(300, 300); //size determines the width, and the height
   // size(); is called Display Geometry. It can make different orientations: square, landscape, portrait
   // size (); Also determine the size of the dislay. 
+  
+  //Population, this ensures that the width, and the height are the values determined in the set-up.
+  x = width*1/4;
+  y = height*1/4;
+  rectWidth = width*1/2;
+  rectHeight = height*1/2;
+  thin=width*1/50;
+  thick=2*thin;
+  
   println("Canvas Size", width, height); //will tell you the monitors dimensions. 
   println("Display", "width: ", displayWidth, "height: ", displayHeight);
 }//End setup, this is mandatory, can't have a program without it
