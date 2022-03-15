@@ -8,6 +8,9 @@ void setup (){
 void draw (){
   if (nightMode== true) println("I am nocturnal"); //if nightMode is true, the computer will print I am nocturnal
   if (nightMode== false) println (" ");
+  
+  // difference between == and =: = sets to the variable to something, ==asks is the variable this value? 
+  // and if it is something will usually happen. 
 }//End draw
 //
 void keyPressed (){
