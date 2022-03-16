@@ -1,12 +1,3 @@
-/*
-Add listeners
- 
- 
- 
- 
- 
- */
-
 
 
 //Global Variables:
@@ -97,7 +88,7 @@ void mousePressed ()
  //Nightmode means background color cannot have blue // change random backgroudn for NightMode
  
  //End of Program
- //background(125, 70,38); //defines the amoun of red, green, and blue that will be mixed to make this color. 
+ //background(125, 70,38); //defines the amount of red, green, and blue that will be mixed to make this color. 
  //background(#9A70E3); //used colour selector in tools, and copied it
  //nO NUMBERS, do not put in numbers when doing a rect();
  */
